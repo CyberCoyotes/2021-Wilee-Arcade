@@ -5,5 +5,7 @@ Look up FRC Team 3603, Cyber Coyotes, to connect with us.
 
 # Resources
 VS Code
-FRC Benchtop Program https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-4/creating-benchtop-test-program-cpp-java.html
+
+<a href="https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-4/creating-benchtop-test-program-cpp-java.html">FRC Benchtop Program</a> 
+
 CTRE https://docs.ctre-phoenix.com/en/stable/blog/blogs.html 
