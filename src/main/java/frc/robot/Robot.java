@@ -21,6 +21,7 @@ import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
+import edu.wpi.first.wpilibj.SpeedControllerGroup;
 
 /*** We aren't using Sparks
  * import edu.wpi.first.wpilibj.PWMSparkMax;
@@ -44,10 +45,16 @@ public class Robot extends TimedRobot {
  // ORIGINAL Example private final PWMSparkMax m_leftMotor = new PWMSparkMax(0);
  // ORIGINAL Example private final PWMSparkMax m_rightMotor = new PWMSparkMax(1);
  
-  private final WPI_TalonSRX m_leftMotor = new WPI_TalonSRX(1);
-  private final WPI_TalonSRX m_rightMotor = new WPI_TalonSRX(2);
+  private final WPI_TalonSRX m_leftMotor1 = new WPI_TalonSRX(3);
+  private final WPI_TalonSRX m_leftMotor2 = new WPI_TalonSRX(4);
 
-  private final DifferentialDrive m_robotDrive = new DifferentialDrive(m_leftMotor, m_rightMotor);
+  private final WPI_TalonSRX m_rightMotor1 = new WPI_TalonSRX(0);
+  private final WPI_TalonSRX m_rightMotor2 = new WPI_TalonSRX(1);
+
+  SpeedControllerGroup leftMotor = new SpeedControllerGroup(m_leftMotor1, m_leftMotor2);
+  SpeedControllerGroup rightMotor = new SpeedControllerGroup(m_rightMotor1, m_rightMotor2);
+
+  private final DifferentialDrive m_robotDrive = new DifferentialDrive(leftMotor, rightMotor);
   private final Joystick m_stick = new Joystick(0);
 
   @Override
