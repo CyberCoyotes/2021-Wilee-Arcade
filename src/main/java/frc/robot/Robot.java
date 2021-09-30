@@ -42,8 +42,8 @@ import edu.wpi.first.wpilibj.SpeedControllerGroup;
  * arcade steering.
  */
 public class Robot extends TimedRobot {
- // ORIGINAL Example private final PWMSparkMax m_leftMotor = new PWMSparkMax(0);
- // ORIGINAL Example private final PWMSparkMax m_rightMotor = new PWMSparkMax(1);
+ // ORIGINAL EXAMPLE private final PWMSparkMax m_leftMotor = new PWMSparkMax(0);
+ // ORIGINAL EXAMPLE private final PWMSparkMax m_rightMotor = new PWMSparkMax(1);
  
   private final WPI_TalonSRX m_leftMotor1 = new WPI_TalonSRX(3);
   private final WPI_TalonSRX m_leftMotor2 = new WPI_TalonSRX(4);
