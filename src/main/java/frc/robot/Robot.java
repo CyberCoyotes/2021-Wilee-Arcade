@@ -61,7 +61,15 @@ public class Robot extends TimedRobot {
   public void teleopPeriodic() {
     // Drive with arcade drive.
     // That means that the Y axis drives forward
+    
     // and backward, and the X turns left and right.
     m_robotDrive.arcadeDrive(m_stick.getY(), m_stick.getX());
+  }
+  @Override
+  public void robotInit(){
+    //point is to invert motors of the bot, but may or may not work depending if these are the motor groups of the bot at the moment or if the bot uses copies
+    leftMotor.setInverted(true);
+    rightMotor.setInverted(true);
+    
   }
 }
