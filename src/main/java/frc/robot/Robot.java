@@ -45,7 +45,7 @@ public class Robot extends TimedRobot {
  // ORIGINAL EXAMPLE private final PWMSparkMax m_leftMotor = new PWMSparkMax(0);
  // ORIGINAL EXAMPLE private final PWMSparkMax m_rightMotor = new PWMSparkMax(1);
  
-  private final WPI_TalonSRX m_leftMotor1 = new WPI_TalonSRX(3);
+  private final WPI_TalonSRX m_leftMotor1 = new WPI_TalonSRX(5);
   private final WPI_TalonSRX m_leftMotor2 = new WPI_TalonSRX(4);
 
   private final WPI_TalonSRX m_rightMotor1 = new WPI_TalonSRX(0);
